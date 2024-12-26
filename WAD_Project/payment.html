@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Pay</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    body {
+      font-family: "Inria Serif", serif;
+      background-color: #FDF1E4;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styling */
+    .header {
+      background-color: #514644;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .header img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    /* Sidebar Styling */
+    .sidebar {
+      width: 20%;
+      background-color: #EFE8E2;
+      min-height: 100vh;
+      float: left;
+      padding: 20px 10px;
+      box-sizing: border-box;
+    }
+
+    .sidebar img {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .sidebar p {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .sidebar a.active {
+      background-color: #514644;
+      color: white;
+    }
+
+    /* Content Styling */
+    .content {
+      width: 80%;
+      float: left;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .content h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #514644;
+      margin-bottom: 20px;
+    }
+
+    .payment-item {
+      display: flex;
+      align-items: center;
+      background-color: #EFE8E2;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .payment-item img {
+      width: 150px;
+      margin-right: 20px;
+    }
+
+    .payment-details {
+      flex-grow: 1;
+    }
+
+    .payment-details p {
+      margin: 5px 0;
+    }
+
+    .payment-actions {
+      display: flex;
+      align-items: center;
+    }
+
+    .payment-actions button {
+      padding: 10px 20px;
+      background-color: #514644;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .payment-actions button:hover {
+      background-color: #333;
+    }
+
+    /* Footer Styling */
+    .footer {
+      clear: both;
+      background-color: #514644;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="left">
+      <span>Follow us on</span>
+      <a href="https://www.facebook.com"><img src="images/Facebook.jpg" alt="Facebook"></a>
+      <a href="https://www.instagram.com"><img src="images/Instagram.jpg" alt="Instagram"></a>
+    </div>
+    <div class="right">
+      <a href="booking_form.php">Book Appointment</a>
+      <a href="faq.html">FAQ</a>
+      <a href="edit_profile.php">Mia_02</a>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="images/profile.jpg" alt="Profile Picture">
+    <p>Mia_02</p>
+    <a href="profile.php">My Account</a>
+    <a href="edit_profile.php">Profile</a>
+    <a href="booking_homepage.html">My Appointment</a>
+    <a href="payment01.html" class="active">To Pay</a>
+    <a href="transaction_details.html">Transaction Details</a>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>To Pay</h1>
+    <p class="note">Note: Please pay after pick-up.</p>
+    <div class="payment-item">
+      <img src="images/UniformService.jpg" alt="Kids White Uniform">
+      <div class="payment-details">
+        <p><strong>Kids White Uniform</strong></p>
+        <p><strong>Size:</strong> 34</p>
+        <p><strong>Qty:</strong> 1</p>
+      </div>
+      <div class="payment-actions">
+        <button>Pay</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>
+      <span>Customer Service</span>
+      <a href="#">Help Centre</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div>
+      <span>About YourTailor</span>
+      <a href="#">About Us</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div>
+      <span>Follow Us</span>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
