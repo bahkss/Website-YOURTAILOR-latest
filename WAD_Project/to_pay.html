@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YourTailor Services</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    body {
+      font-family: 'Inria Serif', serif;
+      background-color: #FDF1E4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-container {
+      background-color: #514644;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .social-media {
+      display: flex;
+      align-items: center;
+    }
+
+    .social-media span {
+      margin-right: 10px;
+    }
+
+    .social-media a {
+      margin-right: 10px;
+    }
+
+    .header-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-right a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+
+    .search-bar {
+      background-color: #A89384;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 5px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      font-family: 'Inria Serif', serif;
+    }
+
+    .search-bar button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+
+    .sidebar {
+      width: 25%;
+      padding: 20px;
+      background-color: #FDF1E4;
+    }
+
+    .sidebar-profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar-profile img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-item {
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      color: #333;
+    }
+
+    .menu-item.active {
+      background-color: #ddd;
+    }
+
+    .services {
+      width: 75%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .to-pay {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .to-pay img {
+      width: 60px;
+      height: auto;
+    }
+
+    .footer {
+      background-color: #FDF1E4;
+      padding: 20px;
+    }
+
+    .footer-columns {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer h3 {
+      font-family: 'Inria Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header-container">
+    <div class="social-media">
+      <span>Follow us on</span>
+      <a href="#"><img src="images/Facebook.jpg" alt="Facebook" width="20"></a>
+      <a href="#"><img src="images/Instagram.jpg" alt="Instagram" width="20"></a>
+    </div>
+    <div class="header-right">
+      <a href="#">Book Appointment</a>
+      <a href="#">FAQ</a>
+      <a href="#">Mia_02</a>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search by service">
+    <button><img src="images/search.png" alt="Search" width="16"></button>
+  </div>
+
+  <!-- Main Section -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-profile">
+        <img src="images/account.jpg" alt="Profile">
+        <span>Mia_02</span>
+      </div>
+      <ul class="menu">
+        <li><a href="#" class="menu-item">My Account</a></li>
+        <li><a href="#" class="menu-item">Profile</a></li>
+        <li><a href="#" class="menu-item active">To Pay</a></li>
+        <li><a href="#" class="menu-item">Transaction Details</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="services">
+      <h2>To Pay</h2>
+      <div class="to-pay">
+        <img src="images/uniform.jpg" alt="Kids White Uniform">
+        <div>
+          <p>Kids White Uniform</p>
+          <p>Size: 34</p>
+          <p>Qty: 1</p>
+        </div>
+        <button>Pay</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h3>Customer Service</h3>
+        <a href="#">Help Centre</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div>
+        <h3>About YourTailor</h3>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div>
+        <h3>Payment</h3>
+        <a href="#">Cash</a>
+        <a href="#">Online Payment</a>
+        <a href="#">Credit Card</a>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
